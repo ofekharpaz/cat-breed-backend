@@ -6,3 +6,4 @@ inference-sdk==0.12.1
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
+gunicorn==22.0.0
