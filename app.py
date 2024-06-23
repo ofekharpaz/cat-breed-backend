@@ -15,6 +15,11 @@ CLIENT = InferenceHTTPClient(
     api_key=ROBOFLOW_API_KEY
 )
 
+# Dummy GET route
+@app.route('/dummy', methods=['GET'])
+def dummy_route():
+    return jsonify({'message': 'Dummy route reached successfully'}), 200
+
 # Endpoint to receive POST requests with image
 @app.route('/predict', methods=['POST'])
 def predict():
